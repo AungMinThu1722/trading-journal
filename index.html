@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Metadata -->
+    <title>TradeArchitect - AI Trading Journal</title>
+    <meta name="description" content="A minimalist, AI-powered FX trading journal designed for discipline and risk management." />
+    <meta name="keywords" content="forex, trading journal, AI coach, risk management, trading psychology" />
+    <meta name="author" content="TradeArchitect" />
+    
+    <!-- Open Graph / Facebook / GitHub -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/" />
+    <meta property="og:title" content="TradeArchitect - AI Trading Journal" />
+    <meta property="og:description" content="Track your trades, analyze performance, and get AI coaching." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="TradeArchitect" />
+    <meta property="twitter:description" content="A minimalist, AI-powered FX trading journal." />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0F1115', // Deep charcoal
+              surface: '#18181B', // Lighter charcoal for cards
+              primary: '#10B981', // Emerald for success/action
+              secondary: '#71717A', // Muted gray
+              textMain: '#E4E4E7', // Off-white
+              textMuted: '#A1A1AA', // Lighter gray
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'fade-in-up': 'fadeInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Global Styles -->
+    <style>
+      body {
+        background-color: #0F1115;
+        color: #E4E4E7;
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F1115;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #27272A;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3F3F46;
+      }
+    </style>
+
+    <!-- Import Map for React -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+        "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      }
+    }
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
